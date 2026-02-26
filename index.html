@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEFAZ SP - Resumos Teóricos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        header {
+            background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        
+        header .subtitle {
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+        
+        .info-bar {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px;
+            background: #e8f4f8;
+            border-bottom: 3px solid #0f3460;
+        }
+        
+        .info-item {
+            background: #0f3460;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        
+        .menu-section {
+            padding: 30px 40px;
+        }
+        
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #0f3460;
+        }
+        
+        .section-number {
+            background: #0f3460;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .section-title h2 {
+            font-size: 1.4em;
+            color: #0f3460;
+        }
+        
+        .question-count {
+            background: #e74c3c;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-left: auto;
+        }
+        
+        .discipline-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .discipline-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 12px;
+            padding: 20px;
+            text-decoration: none;
+            color: inherit;
+            border-left: 5px solid #0f3460;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .discipline-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border-left-color: #e74c3c;
+        }
+        
+        .discipline-icon {
+            background: #0f3460;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            flex-shrink: 0;
+        }
+        
+        .discipline-info h3 {
+            color: #0f3460;
+            font-size: 1em;
+            margin-bottom: 5px;
+        }
+        
+        .discipline-info p {
+            font-size: 0.85em;
+            color: #666;
+        }
+        
+        .priority-badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.75em;
+            font-weight: bold;
+            margin-left: auto;
+        }
+        
+        .priority-high {
+            background: #e74c3c;
+            color: white;
+        }
+        
+        .priority-medium {
+            background: #f39c12;
+            color: white;
+        }
+        
+        .priority-low {
+            background: #3498db;
+            color: white;
+        }
+        
+        footer {
+            background: #0f3460;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            .menu-section {
+                padding: 20px;
+            }
+            
+            .discipline-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SEFAZ SP</h1>
+            <p class="subtitle">Auditor Fiscal da Receita Estadual - Resumos Teóricos</p>
+        </header>
+        
+        <div class="info-bar">
+            <div class="info-item">200 Vagas</div>
+            <div class="info-item">R$ 21.177,10</div>
+            <div class="info-item">FCC</div>
+            <div class="info-item">Provas: 28/02 e 01/03/2026</div>
+        </div>
+
+        <!-- P1 - Conhecimentos Gerais -->
+        <div class="menu-section">
+            <div class="section-title">
+                <div class="section-number">P1</div>
+                <h2>Conhecimentos Gerais</h2>
+                <span class="question-count">100 Questões</span>
+            </div>
+            
+            <div class="discipline-grid">
+                <a href="disciplinas/portugues.html" class="discipline-card">
+                    <div class="discipline-icon">📝</div>
+                    <div class="discipline-info">
+                        <h3>Português</h3>
+                        <p>Interpretação, gramática, concordância</p>
+                    </div>
+                    <span class="priority-badge priority-medium">Média</span>
+                </a>
+                
+                <a href="disciplinas/matematica_financeira.html" class="discipline-card">
+                    <div class="discipline-icon">💰</div>
+                    <div class="discipline-info">
+                        <h3>Matemática Financeira</h3>
+                        <p>Juros, descontos, amortização</p>
+                    </div>
+                    <span class="priority-badge priority-medium">Média</span>
+                </a>
+                
+                <a href="disciplinas/estatistica.html" class="discipline-card">
+                    <div class="discipline-icon">📊</div>
+                    <div class="discipline-info">
+                        <h3>Estatística</h3>
+                        <p>Médias, probabilidade, inferência</p>
+                    </div>
+                    <span class="priority-badge priority-low">Baixa</span>
+                </a>
+                
+                <a href="disciplinas/administracao_publica.html" class="discipline-card">
+                    <div class="discipline-icon">🏛️</div>
+                    <div class="discipline-info">
+                        <h3>Administração Pública</h3>
+                        <p>Gestão pública, processos</p>
+                    </div>
+                    <span class="priority-badge priority-medium">Média</span>
+                </a>
+                
+                <a href="disciplinas/economia.html" class="discipline-card">
+                    <div class="discipline-icon">📈</div>
+                    <div class="discipline-info">
+                        <h3>Economia</h3>
+                        <p>Micro e macroeconomia</p>
+                    </div>
+                    <span class="priority-badge priority-medium">Média</span>
+                </a>
+                
+                <a href="disciplinas/financas_publicas.html" class="discipline-card">
+                    <div class="discipline-icon">💵</div>
+                    <div class="discipline-info">
+                        <h3>Finanças Públicas</h3>
+                        <p>Orçamento, LRF, dívida ativa</p>
+                    </div>
+                    <span class="priority-badge priority-medium">Média</span>
+                </a>
+                
+                <a href="disciplinas/raciocinio_critico.html" class="discipline-card">
+                    <div class="discipline-icon">🧠</div>
+                    <div class="discipline-info">
+                        <h3>Raciocínio Crítico</h3>
+                        <p>Lógica, sequências</p>
+                    </div>
+                    <span class="priority-badge priority-low">Baixa</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- P2 - Conhecimentos Básicos -->
+        <div class="menu-section">
+            <div class="section-title">
+                <div class="section-number">P2</div>
+                <h2>Conhecimentos Básicos</h2>
+                <span class="question-count">80 Questões</span>
+            </div>
+            
+            <div class="discipline-grid">
+                <a href="disciplinas/direito_constitucional.html" class="discipline-card">
+                    <div class="discipline-icon">⚖️</div>
+                    <div class="discipline-info">
+                        <h3>Direito Constitucional</h3>
+                        <p>Princípios, competências, imunidades</p>
+                    </div>
+                    <span class="priority-badge priority-high">Alta</span>
+                </a>
+                
+                <a href="disciplinas/direito_administrativo.html" class="discipline-card">
+                    <div class="discipline-icon">📋</div>
+                    <div class="discipline-info">
+                        <h3>Direito Administrativo</h3>
+                        <p>Atos, contratos, agentes</p>
+                    </div>
+                    <span class="priority-badge priority-medium">Média</span>
+                </a>
+                
+                <a href="disciplinas/direito_civil.html" class="discipline-card">
+                    <div class="discipline-icon">👤</div>
+                    <div class="discipline-info">
+                        <h3>Direito Civil</h3>
+                        <p>Pessoas, obrigações, contratos</p>
+                    </div>
+                    <span class="priority-badge priority-low">Baixa</span>
+                </a>
+                
+                <a href="disciplinas/direito_empresarial.html" class="discipline-card">
+                    <div class="discipline-icon">🏢</div>
+                    <div class="discipline-info">
+                        <h3>Direito Empresarial</h3>
+                        <p>Sociedades, falência</p>
+                    </div>
+                    <span class="priority-badge priority-low">Baixa</span>
+                </a>
+                
+                <a href="disciplinas/direito_financeiro.html" class="discipline-card">
+                    <div class="discipline-icon">🏦</div>
+                    <div class="discipline-info">
+                        <h3>Direito Financeiro</h3>
+                        <p>Orçamento, crédito público</p>
+                    </div>
+                    <span class="priority-badge priority-medium">Média</span>
+                </a>
+                
+                <a href="disciplinas/direito_penal.html" class="discipline-card">
+                    <div class="discipline-icon">🔨</div>
+                    <div class="discipline-info">
+                        <h3>Direito Penal</h3>
+                        <p>Crimes tributários, administration</p>
+                    </div>
+                    <span class="priority-badge priority-low">Baixa</span>
+                </a>
+                
+                <a href="disciplinas/legislacao_tributaria.html" class="discipline-card">
+                    <div class="discipline-icon">📜</div>
+                    <div class="discipline-info">
+                        <h3>Legislação Tributária</h3>
+                        <p>CTN, ICMS, IPVA, ITCMD</p>
+                    </div>
+                    <span class="priority-badge priority-high">Alta</span>
+                </a>
+                
+                <a href="disciplinas/contabilidade_geral.html" class="discipline-card">
+                    <div class="discipline-icon">📒</div>
+                    <div class="discipline-info">
+                        <h3>Contabilidade Geral</h3>
+                        <p>Balanço, demonstrações</p>
+                    </div>
+                    <span class="priority-badge priority-high">Alta</span>
+                </a>
+                
+                <a href="disciplinas/auditoria.html" class="discipline-card">
+                    <div class="discipline-icon">🔍</div>
+                    <div class="discipline-info">
+                        <h3>Auditoria</h3>
+                        <p>Normas, procedimentos</p>
+                    </div>
+                    <span class="priority-badge priority-medium">Média</span>
+                </a>
+                
+                <a href="disciplinas/adm_financeira_orcamentaria.html" class="discipline-card">
+                    <div class="discipline-icon">💳</div>
+                    <div class="discipline-info">
+                        <h3>Adm. Financeira e Orçamentária</h3>
+                        <p>LOA, LDO, PPA</p>
+                    </div>
+                    <span class="priority-badge priority-medium">Média</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- P3 - Conhecimentos Específicos -->
+        <div class="menu-section">
+            <div class="section-title">
+                <div class="section-number">P3</div>
+                <h2>Conhecimentos Específicos - Gestão Tributária</h2>
+                <span class="question-count">80 Questões</span>
+            </div>
+            
+            <div class="discipline-grid">
+                <a href="disciplinas/direito_tributario.html" class="discipline-card">
+                    <div class="discipline-icon">⚖️</div>
+                    <div class="discipline-info">
+                        <h3>Direito Tributário Avançado</h3>
+                        <p>Obrigação, crédito, substituição</p>
+                    </div>
+                    <span class="priority-badge priority-high">Alta</span>
+                </a>
+                
+                <a href="disciplinas/contabilidade_avancada.html" class="discipline-card">
+                    <div class="discipline-icon">📚</div>
+                    <div class="discipline-info">
+                        <h3>Contabilidade Avançada</h3>
+                        <p>Consolidação, MEP</p>
+                    </div>
+                    <span class="priority-badge priority-high">Alta</span>
+                </a>
+                
+                <a href="disciplinas/contabilidade_custos.html" class="discipline-card">
+                    <div class="discipline-icon">💲</div>
+                    <div class="discipline-info">
+                        <h3>Contabilidade de Custos</h3>
+                        <p>Custeio, ponto de equilíbrio</p>
+                    </div>
+                    <span class="priority-badge priority-high">Alta</span>
+                </a>
+                
+                <a href="disciplinas/auditoria_fiscal.html" class="discipline-card">
+                    <div class="discipline-icon">📝</div>
+                    <div class="discipline-info">
+                        <h3>Auditoria Fiscal</h3>
+                        <p>Procedimentos fiscais</p>
+                    </div>
+                    <span class="priority-badge priority-medium">Média</span>
+                </a>
+                
+                <a href="disciplinas/economia_tributacao.html" class="discipline-card">
+                    <div class="discipline-icon">💰</div>
+                    <div class="discipline-info">
+                        <h3>Economia da Tributação</h3>
+                        <p>Incidência, eficiência</p>
+                    </div>
+                    <span class="priority-badge priority-low">Baixa</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- P3 - TIC -->
+        <div class="menu-section">
+            <div class="section-title">
+                <div class="section-number">P3</div>
+                <h2>Conhecimentos Específicos - TIC</h2>
+                <span class="question-count">80 Questões</span>
+            </div>
+            
+            <div class="discipline-grid">
+                <a href="disciplinas/fundamentos_tic.html" class="discipline-card">
+                    <div class="discipline-icon">💻</div>
+                    <div class="discipline-info">
+                        <h3>Fundamentos de TIC</h3>
+                        <p>Hardware, software, redes</p>
+                    </div>
+                    <span class="priority-badge priority-high">Alta</span>
+                </a>
+                
+                <a href="disciplinas/seguranca_informacao.html" class="discipline-card">
+                    <div class="discipline-icon">🔐</div>
+                    <div class="discipline-info">
+                        <h3>Segurança da Informação</h3>
+                        <p>Criptografia, firewall, ISO</p>
+                    </div>
+                    <span class="priority-badge priority-high">Alta</span>
+                </a>
+                
+                <a href="disciplinas/ciencia_dados.html" class="discipline-card">
+                    <div class="discipline-icon">🖥️</div>
+                    <div class="discipline-info">
+                        <h3>Ciência de Dados e IA</h3>
+                        <p>Machine learning, big data</p>
+                    </div>
+                    <span class="priority-badge priority-high">Alta</span>
+                </a>
+                
+                <a href="disciplinas/governanca_tic.html" class="discipline-card">
+                    <div class="discipline-icon">🎯</div>
+                    <div class="discipline-info">
+                        <h3>Governança de TIC</h3>
+                        <p>COBIT, ITIL, PMBOK</p>
+                    </div>
+                    <span class="priority-badge priority-medium">Média</span>
+                </a>
+                
+                <a href="disciplinas/infraestrutura_ti.html" class="discipline-card">
+                    <div class="discipline-icon">☁️</div>
+                    <div class="discipline-info">
+                        <h3>Infraestrutura TI</h3>
+                        <p>Cloud, virtualização</p>
+                    </div>
+                    <span class="priority-badge priority-medium">Média</span>
+                </a>
+                
+                <a href="disciplinas/desenvolvimento_sistemas.html" class="discipline-card">
+                    <div class="discipline-icon">⚙️</div>
+                    <div class="discipline-info">
+                        <h3>Desenvolvimento de Sistemas</h3>
+                        <p>Programação, APIs</p>
+                    </div>
+                    <span class="priority-badge priority-medium">Média</span>
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <p><strong>SEFAZ SP - Resumos Teóricos</strong></p>
+            <p>Auditor Fiscal da Receita Estadual</p>
+            <p style="margin-top: 10px; opacity: 0.7;">BOM ESTUDO! 🎯</p>
+        </footer>
+    </div>
+</body>
+</html>
