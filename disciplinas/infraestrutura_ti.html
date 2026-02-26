@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infraestrutura TI - SEFAZ SP</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: #333; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); min-height: 100vh; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+        header { background: linear-gradient(135deg, #0288d1 0%, #03a9f4 100%); color: white; padding: 30px 40px; }
+        header h1 { font-size: 2em; margin-bottom: 5px; }
+        header .subtitle { opacity: 0.9; }
+        .back-link { display: inline-block; padding: 10px 20px; background: #0f3460; color: white; text-decoration: none; border-radius: 8px; margin: 20px 40px; font-weight: bold; }
+        .back-link:hover { background: #16213e; }
+        .content { padding: 0 40px 40px; }
+        h2 { color: #0f3460; border-bottom: 3px solid #0288d1; padding-bottom: 10px; margin: 30px 0 20px; font-size: 1.4em; }
+        h3 { color: #0288d1; margin: 25px 0 15px; font-size: 1.2em; }
+        .topic { background: #f8f9fa; border-left: 4px solid #0288d1; padding: 15px 20px; margin: 15px 0; border-radius: 0 10px 10px 0; }
+        .topic h4 { color: #0f3460; margin-bottom: 10px; font-size: 1.1em; }
+        ul { margin-left: 20px; }
+        li { margin: 8px 0; }
+        .highlight { background: #fff3cd; padding: 15px 20px; border-radius: 10px; margin: 20px 0; border-left: 4px solid #ffc107; }
+        .highlight strong { color: #856404; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th { background: #0288d1; color: white; padding: 12px; text-align: left; }
+        td { padding: 10px 12px; border-bottom: 1px solid #ddd; }
+        tr:hover { background: #f8f9fa; }
+        footer { background: #0f3460; color: white; text-align: center; padding: 20px; }
+        @media (max-width: 768px) { .content { padding: 0 20px 20px; } header { padding: 20px; } .back-link { margin: 15px 20px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Infraestrutura TI</h1>
+            <p class="subtitle">SEFAZ SP - Auditor Fiscal (TIC) | Prioridade: MÉDIA</p>
+        </header>
+        <a href="../index.html" class="back-link">← Voltar ao Menu</a>
+        <div class="content">
+            <h2>1. Cloud Computing</h2>
+            <div class="topic">
+                <ul>
+                    <li><strong>IaaS:</strong> Infraestrutura como serviço</li>
+                    <li><strong>PaaS:</strong> Plataforma como serviço</li>
+                    <li><strong>SaaS:</strong> Software como serviço</li>
+                </ul>
+            </div>
+            <h2>2. Virtualização</h2>
+            <table>
+                <tr><th>Tipo</th><th>Descrição</th></tr>
+                <tr><td>Hypervisor</td><td>Software de virtualização</td></tr>
+                <tr><td>VM</td><td>Máquina virtual</td></tr>
+                <tr><td>Container</td><td>Isolamento de aplicações</td></tr>
+            </table>
+            <h2>3. Storage</h2>
+            <div class="topic">
+                <ul>
+                    <li><strong>DAS:</strong> Armazenamento direto</li>
+                    <li><strong>NAS:</strong> Arquivos em rede</li>
+                    <li><strong>SAN:</strong> Blocos em alta velocidade</li>
+                </ul>
+            </div>
+            <h2>4. Redes</h2>
+            <div class="topic">
+                <ul>
+                    <li><strong>Switch:</strong> Comutação de pacotes</li>
+                    <li><strong>Router:</strong> Roteamento entre redes</li>
+                    <li><strong>Firewall:</strong> Segurança de perímetro</li>
+                </ul>
+            </div>
+            <h2>5. Datacenter</h2>
+            <div class="topic">
+                <ul>
+                    <li><strong>Infraestrutura física:</strong> Energia, refrigeração</li>
+                    <li><strong>Alta disponibilidade:</strong> Redundância</li>
+                    <li><strong> Tier levels:</strong> Níveis de disponibilidade</li>
+                </ul>
+            </div>
+            <div class="highlight">
+                <strong>Dica:</strong> Estude cloud computing e virtualização. São conceitos fundamentais em TI moderna.
+            </div>
+        </div>
+        <footer><p>SEFAZ SP - Auditor Fiscal | Infraestrutura TI</p></footer>
+    </div>
+</body>
+</html>

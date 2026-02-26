@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilidade de Custos - SEFAZ SP</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: #333; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); min-height: 100vh; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+        header { background: linear-gradient(135deg, #f57c00 0%, #f39c12 100%); color: white; padding: 30px 40px; }
+        header h1 { font-size: 2em; margin-bottom: 5px; }
+        header .subtitle { opacity: 0.9; }
+        .back-link { display: inline-block; padding: 10px 20px; background: #0f3460; color: white; text-decoration: none; border-radius: 8px; margin: 20px 40px; font-weight: bold; }
+        .back-link:hover { background: #16213e; }
+        .content { padding: 0 40px 40px; }
+        h2 { color: #0f3460; border-bottom: 3px solid #f57c00; padding-bottom: 10px; margin: 30px 0 20px; font-size: 1.4em; }
+        h3 { color: #f57c00; margin: 25px 0 15px; font-size: 1.2em; }
+        .topic { background: #f8f9fa; border-left: 4px solid #f57c00; padding: 15px 20px; margin: 15px 0; border-radius: 0 10px 10px 0; }
+        .topic h4 { color: #0f3460; margin-bottom: 10px; font-size: 1.1em; }
+        ul { margin-left: 20px; }
+        li { margin: 8px 0; }
+        .highlight { background: #fff3cd; padding: 15px 20px; border-radius: 10px; margin: 20px 0; border-left: 4px solid #ffc107; }
+        .highlight strong { color: #856404; }
+        .formula { background: #fff3e0; padding: 15px 20px; border-radius: 10px; margin: 15px 0; text-align: center; font-family: 'Courier New', monospace; font-size: 1.1em; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th { background: #f57c00; color: white; padding: 12px; text-align: left; }
+        td { padding: 10px 12px; border-bottom: 1px solid #ddd; }
+        tr:hover { background: #f8f9fa; }
+        footer { background: #0f3460; color: white; text-align: center; padding: 20px; }
+        @media (max-width: 768px) { .content { padding: 0 20px 20px; } header { padding: 20px; } .back-link { margin: 15px 20px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Contabilidade de Custos</h1>
+            <p class="subtitle">SEFAZ SP - Auditor Fiscal | Prioridade: ALTA</p>
+        </header>
+        <a href="../index.html" class="back-link">← Voltar ao Menu</a>
+        <div class="content">
+            <h2>1. Conceitos Fundamentais</h2>
+            <div class="topic">
+                <ul>
+                    <li><strong>Custo:</strong> Gasto relativo a bem/serviço usado na produção</li>
+                    <li><strong>Despesa:</strong> Gasto que reduz o patrimônio (não produção)</li>
+                    <li><strong>Perda:</strong> Gasto anormal, não previsto</li>
+                    <li><strong>Gasto:</strong> Sacrifício financeiro geral</li>
+                </ul>
+            </div>
+            <h2>2. Classificação de Custos</h2>
+            <table>
+                <tr><th>Critério</th><th>Tipo</th><th>Exemplos</th></tr>
+                <tr><td>Por elemento</td><td>MP, MOD, CIF</td><td>Matéria-prima, salários</td></tr>
+                <tr><td>Por volume</td><td>Fixos, Variáveis</td><td>Aluguel, energia</td></tr>
+                <tr><td>Por departamentalização</td><td>Diretos, Indiretos</td><td>Mão de obra, supervisão</td></tr>
+            </table>
+            <h2>3. Custeio por Absorção</h2>
+            <div class="topic">
+                <ul>
+                    <li>Considera TODOS os custos (fixos e variáveis)</li>
+                    <li>Rateia CIF aos produtos</li>
+                    <li>Obrigatório para legislação</li>
+                </ul>
+            </div>
+            <h2>4. Custeio Variável (Direto)</h2>
+            <div class="topic">
+                <ul>
+                    <li>Considera apenas custos variáveis</li>
+                    <li>Margem de contribuição é chave</li>
+                    <li>Decisões de curto prazo</li>
+                </ul>
+            </div>
+            <h2>5. Margem de Contribuição</h2>
+            <div class="formula">MC = PV - CV</div>
+            <ul>
+                <li><strong>PV:</strong> Preço de venda</li>
+                <li><strong>CV:</strong> Custo variável</li>
+            </ul>
+            <h2>6. Ponto de Equilíbrio</h2>
+            <div class="formula">PE = CF / MCunit</div>
+            <div class="topic">
+                <ul>
+                    <li><strong>Contábil:</strong> CF / (PV - CV)</li>
+                    <li><strong>Econômico:</strong> CF + lucro desejado</li>
+                    <li><strong>Em unidades:</strong> CF / margem unitária</li>
+                </ul>
+            </div>
+            <h2>7. Custeio ABC</h2>
+            <div class="topic">
+                <ul>
+                    <li><strong>Activity-Based Costing</strong></li>
+                    <li>Atividades geram custos</li>
+                    <li>Recursos → Atividades → Produtos</li>
+                </ul>
+            </div>
+            <h2>8. Custo de Produção</h2>
+            <div class="formula">CPP = MP + MOD + CIF</div>
+            <div class="topic">
+                <ul>
+                    <li><strong>Estoque inicial:</strong> Saldo anterior</li>
+                    <li>(+) <strong>Matéria-prima:</strong> Compras</li>
+                    <li>(-) <strong>Estoque final:</strong> Sobras</li>
+                    <li><strong>= Consumo:</strong> MP usada</li>
+                </ul>
+            </div>
+            <div class="highlight">
+                <strong>Dica:</strong> Foque no ponto de equilíbrio e margem de contribuição! São muito cobrados.
+            </div>
+        </div>
+        <footer><p>SEFAZ SP - Auditor Fiscal | Contabilidade de Custos</p></footer>
+    </div>
+</body>
+</html>

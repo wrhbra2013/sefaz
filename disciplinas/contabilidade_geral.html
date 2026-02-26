@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilidade Geral - SEFAZ SP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        header {
+            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+            color: white;
+            padding: 30px 40px;
+        }
+        
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+        
+        header .subtitle {
+            opacity: 0.9;
+        }
+        
+        .back-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #0f3460;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 20px 40px;
+            font-weight: bold;
+        }
+        
+        .back-link:hover {
+            background: #16213e;
+        }
+        
+        .content {
+            padding: 0 40px 40px;
+        }
+        
+        h2 {
+            color: #0f3460;
+            border-bottom: 3px solid #27ae60;
+            padding-bottom: 10px;
+            margin: 30px 0 20px;
+            font-size: 1.4em;
+        }
+        
+        h3 {
+            color: #27ae60;
+            margin: 25px 0 15px;
+            font-size: 1.2em;
+        }
+        
+        .topic {
+            background: #f8f9fa;
+            border-left: 4px solid #27ae60;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .topic h4 {
+            color: #0f3460;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        ul {
+            margin-left: 20px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .highlight strong {
+            color: #856404;
+        }
+        
+        .important {
+            background: #f8d7da;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #dc3545;
+        }
+        
+        .important strong {
+            color: #721c24;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th {
+            background: #27ae60;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+        }
+        
+        footer {
+            background: #0f3460;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 0 20px 20px;
+            }
+            
+            header {
+                padding: 20px;
+            }
+            
+            .back-link {
+                margin: 15px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Contabilidade Geral</h1>
+            <p class="subtitle">SEFAZ SP - Auditor Fiscal | Prioridade: ALTA</p>
+        </header>
+        
+        <a href="../index.html" class="back-link">← Voltar ao Menu</a>
+        
+        <div class="content">
+            <div class="highlight">
+                <strong>Importante:</strong> Contabilidade Geral é fundamental para o concurso. Você precisa dominar os conceitos de Balanço Patrimonial, Demonstrações Contábeis e métodos de avaliação.
+            </div>
+
+            <h2>1. Conceitos Fundamentais</h2>
+            
+            <div class="topic">
+                <h4>1.1 Objeto da Contabilidade</h4>
+                <ul>
+                    <li><strong>Objeto:</strong> O patrimônio das entidades (bens, direitos, obrigações e patrimônio líquido).</li>
+                    <li><strong>Finalidade:</strong> Controlar o patrimônio, fornecer informações úteis para tomada de decisões.</li>
+                    <li><strong>Usuários:</strong> Investidores, credores, governo, administradores, empregados.</li>
+                </ul>
+            </div>
+
+            <div class="topic">
+                <h4>1.2 Técnicas Contábeis</h4>
+                <ul>
+                    <li><strong>Escrituração:</strong> Registro de fatos contábeis em livros próprios.</li>
+                    <li><strong>Elaboração de Demonstrações Contábeis:</strong> Balanço Patrimonial, DRE, etc.</li>
+                    <li><strong>Auditoria:</strong> Exame das demonstrações para verificar sua adequação.</li>
+                    <li><strong>Análise das Demonstrações:</strong> Interpretação para tomada de decisões.</li>
+                </ul>
+            </div>
+
+            <h2>2. Princípios Contábeis (Resolução CFC 750/93)</h2>
+            
+            <div class="topic">
+                <ul>
+                    <li><strong>Entidade:</strong> O patrimônio da empresa é separado do patrimônio dos sócios.</li>
+                    <li><strong>Continuidade:</strong> Pressupõe que a empresa continuará operando no futuro.</li>
+                    <li><strong>Opção pelo Custo como Base de Valor:</strong> Os ativos são registrados pelo custo de aquisição.</li>
+                    <li><strong>Competência:</strong> Receitas e despesas são reconhecidas no período a que pertencem.</li>
+                    <li><strong>Prudência:</strong> Em dúvida, escolher o menor resultado para o patrimônio.</li>
+                </ul>
+            </div>
+
+            <h2>3. Balanço Patrimonial</h2>
+            
+            <div class="topic">
+                <h4>3.1 Estrutura</h4>
+                <table>
+                    <tr>
+                        <th>Ativo</th>
+                        <th>Passivo + PL</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Ativo Circulante</strong><br>Disponível, Clientes, Estoques, Despesas Antecipadas</td>
+                        <td><strong>Passivo Circulante</strong><br>Fornecedores, Obrigações trabalhistas, Impostos, Financiamentos</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ativo Não Circulante</strong><br>Realizável a Longo Prazo, Investimentos, Imobilizado, Intangível</td>
+                        <td><strong>Passivo Não Circulante</strong><br>Financiamentos, Provisões</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><strong>Patrimônio Líquido</strong><br>Capital Social, Reservas, Lucros/Prejuízos Acumulados</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="topic">
+                <h4>3.2 Ativo Circulante</h4>
+                <ul>
+                    <li><strong>Disponível:</strong> Caixa, Bancos, Aplicações Financeiras.</li>
+                    <li><strong>Clientes (Duplicatas a Receber):</strong> Direitos derivados de vendas a prazo.</li>
+                    <li><strong>Estoques:</strong> Mercadorias para revenda, matéria-prima, produtos em elaboração.</li>
+                    <li><strong>Despesas Antecipadas:</strong> Despesas pagas antecipadamente (seguros, assinaturas).</li>
+                </ul>
+            </div>
+
+            <div class="topic">
+                <h4>3.3 Ativo Não Circulante</h4>
+                <ul>
+                    <li><strong>Realizável a Longo Prazo:</strong> Direitos com vencimento após 12 meses.</li>
+                    <li><strong>Investimentos:</strong> Participações em outras empresas, imóveis para renda.</li>
+                    <li><strong>Imobilizado:</strong> Bens用于 atividade da empresa (máquinas, veículos, móveis).</li>
+                    <li><strong>Intangíveis:</strong> Direitos que não têm substância física (marcas, patentes, software).</li>
+                </ul>
+            </div>
+
+            <h2>4. Demonstração do Resultado do Exercício (DRE)</h2>
+            
+            <table>
+                <tr>
+                    <td>Receita Bruta de Vendas</td>
+                    <td style="text-align: right;">XXX</td>
+                </tr>
+                <tr>
+                    <td>(-) Deduções (impostos, devoluções, abatimentos)</td>
+                    <td style="text-align: right;">(XXX)</td>
+                </tr>
+                <tr>
+                    <td><strong>= Receita Líquida</strong></td>
+                    <td style="text-align: right;"><strong>XXX</strong></td>
+                </tr>
+                <tr>
+                    <td>(-) Custo das Mercadorias Vendidas (CMV)</td>
+                    <td style="text-align: right;">(XXX)</td>
+                </tr>
+                <tr>
+                    <td><strong>= Lucro Bruto</strong></td>
+                    <td style="text-align: right;"><strong>XXX</strong></td>
+                </tr>
+                <tr>
+                    <td>(-) Despesas Operacionais (administrativas, vendas, financeiras)</td>
+                    <td style="text-align: right;">(XXX)</td>
+                </tr>
+                <tr>
+                    <td><strong>= Lucro Operacional</strong></td>
+                    <td style="text-align: right;"><strong>XXX</strong></td>
+                </tr>
+                <tr>
+                    <td>(-) Despesas Não Operacionais</td>
+                    <td style="text-align: right;">(XXX)</td>
+                </tr>
+                <tr>
+                    <td>(-) IR e CSLL</td>
+                    <td style="text-align: right;">(XXX)</td>
+                </tr>
+                <tr>
+                    <td><strong>= Lucro Líquido</strong></td>
+                    <td style="text-align: right;"><strong>XXX</strong></td>
+                </tr>
+            </table>
+
+            <h2>5. Mecanismo de Débito e Crédito</h2>
+            
+            <div class="topic">
+                <h4>5.1 Origem e Aplicação</h4>
+                <ul>
+                    <li><strong>Origens:</strong> Aumentos de passivo e patrimônio líquido, diminuições de ativo.</li>
+                    <li><strong>Aplicações:</strong> Aumentos de ativo, diminuições de passivo e patrimônio líquido.</li>
+                </ul>
+            </div>
+
+            <div class="topic">
+                <h4>5.2 Regra Fundamental</h4>
+                <table>
+                    <tr>
+                        <th>Natureza</th>
+                        <th>Débito</th>
+                        <th>Crédito</th>
+                    </tr>
+                    <tr>
+                        <td>Ativo</td>
+                        <td>Aumenta</td>
+                        <td>Diminui</td>
+                    </tr>
+                    <tr>
+                        <td>Passivo</td>
+                        <td>Diminui</td>
+                        <td>Aumenta</td>
+                    </tr>
+                    <tr>
+                        <td>Patrimônio Líquido</td>
+                        <td>Diminui</td>
+                        <td>Aumenta</td>
+                    </tr>
+                    <tr>
+                        <td>Receitas</td>
+                        <td>Diminui</td>
+                        <td>Aumenta</td>
+                    </tr>
+                    <tr>
+                        <td>Despesas/Custos</td>
+                        <td>Aumenta</td>
+                        <td>Diminui</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h2>6. Avaliação de Ativos e Passivos</h2>
+            
+            <div class="topic">
+                <h4>6.1 Ativos</h4>
+                <ul>
+                    <li><strong>Custo Histórico:</strong> Valor pago na aquisição.</li>
+                    <li><strong>Valor Justo:</strong> Valor pelo qual um ativo pode ser trocado entre partes conhecedoras.</li>
+                    <li><strong>Valor Recuperável:</strong> Maior valor entre valor de uso e valor de venda.</li>
+                </ul>
+            </div>
+
+            <div class="topic">
+                <h4>6.2 Depreciação, Amortização e Exaustão</h4>
+                <ul>
+                    <li><strong>Depreciação:</strong> Bens tangíveis (máquinas, veículos). Taxa anual: 10% (vida útil 10 anos).</li>
+                    <li><strong>Amortização:</strong> Bens intangíveis (patentes, marcas).</li>
+                    <li><strong>Exaustão:</strong> Recursos naturais (florestas, jazidas).</li>
+                </ul>
+            </div>
+
+            <h2>7. Provisões</h2>
+            
+            <div class="topic">
+                <ul>
+                    <li><strong>Provisão para Devedores Duvidosos (PDD):</strong> Para créditos de liquidação duvidosa.</li>
+                    <li><strong>Provisão para 13º Salário:</strong> Parcela acumulada do ano.</li>
+                    <li><strong>Provisão para Férias:</strong> Direito do empregado.</li>
+                    <li><strong>Provisão para IR:</strong> Imposto de renda a pagar.</li>
+                </ul>
+            </div>
+
+            <h2>8. Demonstrações Obrigatórias (Lei 6.404/76)</h2>
+            
+            <div class="topic">
+                <ul>
+                    <li>Balanço Patrimonial (BP)</li>
+                    <li>Demonstração do Resultado do Exercício (DRE)</li>
+                    <li>Demonstração dos Lucros ou Prejuízos Acumulados (DLPA)</li>
+                    <li>Demonstração das Mutações do Patrimônio Líquido (DMPL)</li>
+                    <li>Demonstração dos Fluxos de Caixa (DFC)</li>
+                    <li>Notas Explicativas</li>
+                </ul>
+            </div>
+
+            <div class="highlight">
+                <strong>Dica de Estudo:</strong> Pratique muito com lançamentos contábeis! Acompanhe a Lei 6.404/76 (Lei das S.A.) e as NBCs (Normas Brasileiras de Contabilidade).
+            </div>
+        </div>
+        
+        <footer>
+            <p>SEFAZ SP - Auditor Fiscal | Contabilidade Geral</p>
+        </footer>
+    </div>
+</body>
+</html>

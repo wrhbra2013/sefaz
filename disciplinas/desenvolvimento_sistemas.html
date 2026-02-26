@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento de Sistemas - SEFAZ SP</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; color: #333; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); min-height: 100vh; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+        header { background: linear-gradient(135deg, #ff6f00 0%, #ff8f00 100%); color: white; padding: 30px 40px; }
+        header h1 { font-size: 2em; margin-bottom: 5px; }
+        header .subtitle { opacity: 0.9; }
+        .back-link { display: inline-block; padding: 10px 20px; background: #0f3460; color: white; text-decoration: none; border-radius: 8px; margin: 20px 40px; font-weight: bold; }
+        .back-link:hover { background: #16213e; }
+        .content { padding: 0 40px 40px; }
+        h2 { color: #0f3460; border-bottom: 3px solid #ff6f00; padding-bottom: 10px; margin: 30px 0 20px; font-size: 1.4em; }
+        h3 { color: #ff6f00; margin: 25px 0 15px; font-size: 1.2em; }
+        .topic { background: #f8f9fa; border-left: 4px solid #ff6f00; padding: 15px 20px; margin: 15px 0; border-radius: 0 10px 10px 0; }
+        .topic h4 { color: #0f3460; margin-bottom: 10px; font-size: 1.1em; }
+        ul { margin-left: 20px; }
+        li { margin: 8px 0; }
+        .highlight { background: #fff3cd; padding: 15px 20px; border-radius: 10px; margin: 20px 0; border-left: 4px solid #ffc107; }
+        .highlight strong { color: #856404; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th { background: #ff6f00; color: white; padding: 12px; text-align: left; }
+        td { padding: 10px 12px; border-bottom: 1px solid #ddd; }
+        tr:hover { background: #f8f9fa; }
+        footer { background: #0f3460; color: white; text-align: center; padding: 20px; }
+        @media (max-width: 768px) { .content { padding: 0 20px 20px; } header { padding: 20px; } .back-link { margin: 15px 20px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Desenvolvimento de Sistemas</h1>
+            <p class="subtitle">SEFAZ SP - Auditor Fiscal (TIC) | Prioridade: MÉDIA</p>
+        </header>
+        <a href="../index.html" class="back-link">← Voltar ao Menu</a>
+        <div class="content">
+            <h2>1. Linguagens de Programação</h2>
+            <div class="topic">
+                <ul>
+                    <li><strong>Python:</strong> scripts, dados, IA</li>
+                    <li><strong>Java:</strong> Enterprise, Android</li>
+                    <li><strong>JavaScript:</strong> Web front-end</li>
+                    <li><strong>C#:</strong> Microsoft ecosystem</li>
+                </ul>
+            </div>
+            <h2>2. Paradigmas</h2>
+            <table>
+                <tr><th>Paradigma</th><th>Características</th></tr>
+                <tr><td>Procedural</td><td>Instruções em sequência</td></tr>
+                <tr><td>Orientado a objetos</td><td>Classes e objetos</td></tr>
+                <tr><td>Funcional</td><td>Funções sem estado</td></tr>
+            </table>
+            <h2>3. APIs e Web Services</h2>
+            <div class="topic">
+                <ul>
+                    <li><strong>REST:</strong> Padrão arquitetural</li>
+                    <li><strong>SOAP:</strong> Protocolo complexo</li>
+                    <li><strong>JSON:</strong> Formato de dados</li>
+                    <li><strong>XML:</strong> Marcação semântica</li>
+                </ul>
+            </div>
+            <h2>4. Metodologias Ágeis</h2>
+            <div class="topic">
+                <ul>
+                    <li><strong>Scrum:</strong> Sprints, papéis definidos</li>
+                    <li><strong>Kanban:</strong> Fluxo contínuo</li>
+                    <li><strong>XP:</strong> Extreme Programming</li>
+                </ul>
+            </div>
+            <h2>5. Banco de Dados</h2>
+            <div class="topic">
+                <ul>
+                    <li><strong>Relacionais:</strong> MySQL, PostgreSQL, Oracle</li>
+                    <li><strong>Não-SQL:</strong> MongoDB, Cassandra</li>
+                    <li><strong>Transações:</strong> ACID</li>
+                </ul>
+            </div>
+            <div class="highlight">
+                <strong>Dica:</strong> Estude REST, APIs e metodologias ágeis. São muito cobrados em concursos.
+            </div>
+        </div>
+        <footer><p>SEFAZ SP - Auditor Fiscal | Desenvolvimento de Sistemas</p></footer>
+    </div>
+</body>
+</html>
